@@ -43,7 +43,3 @@ export function Container_2_Modal(modalContent) {
 
    )
 }
-
-
-
-

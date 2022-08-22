@@ -9,7 +9,7 @@ import { SiLinkedin } from "react-icons/si";
 
 
 
-export function Navbar() { 
+export function Header() { 
    
    const [display, changeDisplay] = useState('none')
    return (

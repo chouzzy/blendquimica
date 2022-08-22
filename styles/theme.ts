@@ -3,12 +3,14 @@ import { extendTheme } from '@chakra-ui/react'
 export const theme = extendTheme({
   
    fonts: {
-      heading: 'Andes',
-      body:'Andes '
+      heading: 'Heebo',
+      body:'Heebo'
    },
    colors: {
      datBlue: "#516BA5",
+     datDarkBlue: "#15274c",
      datGreen:"#a5d320",
+     datGreenActive:"#8de90d",
      datGray: "#d1d3d4"
    },
    styles: {

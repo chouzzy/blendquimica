@@ -7,13 +7,14 @@ export default async (req,res) => {
    const body = JSON.parse(req.body)
    
    const message = `
-   Nome/Empresa:${body.Empresa}\r\n
+   Nome/Empresa: ${body.Empresa}\r\n
+   Email: ${body.Email}\r\n
    Messagem: ${body.Mensagem}
    `;
    const data = {
       to:'matheus@awer.co',
       from: 'contato@awer.co',
-      subject: `${body.Assunto}`,
+      subject: `Contato via site Blend Química`,
       text: message,
       html: message.replace(/\r\n/g,'<br>')
    }

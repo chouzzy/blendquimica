@@ -1,5 +1,5 @@
 import { Box, Container, Flex, Grid, GridItem, Image, SimpleGrid, Text, Link, useBreakpointValue, Input, Stack ,VStack, InputGroup, InputLeftAddon, Button, FormControl} from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import { ImFacebook2 } from "react-icons/im"
 import { RiWhatsappFill, RiMenuLine } from "react-icons/ri";
@@ -14,8 +14,16 @@ export function Container_6() {
         register,
         formState: { errors, isSubmitting },
       } = useForm()
+
+      const [disable, setDisable] = useState(false)
+      const [color, setColor] = useState('datGreen')
+      const [sentText, setSentText] = useState('Enviar')
+   
     
       function onSubmit(values) {
+         setDisable(true)
+         setColor('datBlue')
+         setSentText('Enviado ✔')
         return new Promise(() => {
           setTimeout(() => {
             fetch('/api/mail', {
@@ -51,7 +59,7 @@ export function Container_6() {
    return (
       <>
       {isDesktopVersion?
-      <Box h='30vh' bgColor='#00000046'></Box>
+      <Box h='0vh'></Box>
       :
       ''
       }
@@ -59,27 +67,27 @@ export function Container_6() {
 
          {isMobileVersion?
          <Grid w='90vw' py='5' alignItems='baseline' borderBottom='1px solid #55808c'
-         templateRows='repeat(2, 1fr)'
+         templateRows='repeat(1, 1fr)'
          gap={5} textAlign='center' color='datBlue'>
             <GridItem colStart={1} colEnd={13} mt='auto' py={5} borderBottom='1px solid #55808c' >
                <Image  src={"static/img/blend-logo.png"} maxW='50%' mx='auto' alt='Logo daquimica' />
             </GridItem>
 
             <GridItem colStart={1} colEnd={13} mt='50px'> 
-               <SimpleGrid templateRows='repeat(2, 1fr)'>
+               <SimpleGrid templateRows='repeat(1, 1fr)'>
                   <SimpleGrid mx='auto' textAlign='center'>
                      <Box  fontSize='1.4rem' fontWeight='600'> Endereço/ Telefone </Box>
                      <Box  fontSize='1rem' fontWeight='400'> 
-                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-                     nonummy nibh euismod tincidunt 
-                     ut laoreet dolore mag
-                     </Box>
+                           <Text py={1}> (16) 99179-0291 </Text>
+                           <Text py={1}> Comercial@blendquimica.com.br </Text>
+                           <Text py={1}> Rua Domiciano Leite de Assis, 380 - Distrito industrial Adib Rassi </Text>
+                           <Text py={1}> CEP: 14680-000 - Jardinópolis-SP </Text>
+                        </Box>
                   </SimpleGrid >
                   <SimpleGrid mx='auto' w='9rem' columns={4}  fontSize='1.6rem'>
-                     <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/farmaciadaterra/'> <BsInstagram /> </Link>
-                     <Link  _hover={{color: "teal.400"}} mt='auto' href='https://www.facebook.com/daterraoficial?ref=hl'> <ImFacebook2/> </Link>
-                     <Link  _hover={{color: "teal.400"}} mt='auto' href='https://br.linkedin.com/company/daterra---farm%C3%A1cia-de-manipula%C3%A7%C3%A3o-e-cosm%C3%A9ticos'> <SiLinkedin/> </Link>
-                     <Link _hover={{fontSize:'3rem', transition:'200ms'}} mt='auto' color='#6cd474'fontSize='2.8rem' href='https://wa.me/5516992469499'> <RiWhatsappFill/> </Link>
+                     <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/blendquimica/'> <BsInstagram /> </Link>
+                     <Link  _hover={{color: "teal.400"}} mt='auto' href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <SiLinkedin/> </Link>
+                     <Link _hover={{fontSize:'3rem', transition:'200ms'}} mt='auto' color='#6cd474'fontSize='2.8rem' href='https://wa.me/5516991790291'> <RiWhatsappFill/> </Link>
                   </SimpleGrid >
                </SimpleGrid>
             </GridItem>
@@ -88,6 +96,7 @@ export function Container_6() {
                <Stack spacing={2} w='100%' textAlign='left'>
                   <Box  fontSize='1.2rem' fontWeight='600'> Envie-nos uma mensagem </Box>
                   
+                  <FormControl isRequired>
                   <form onSubmit={handleSubmit(onSubmit)}>
                   <Text>Empresa/ Pessoa:</Text>
                   <Input
@@ -98,14 +107,14 @@ export function Container_6() {
                   w='100%'
                   {...register("Empresa")}
                   />
-                  <Text >Assunto:</Text>
+                  <Text>E-mail:</Text>
                   <Input
-                  type='text'
+                  type='name'
                   my='10px'
-                  placeholder='Assunto'
+                  placeholder='Seu e-mail'
                   size='sm'
                   w='100%'
-                  {...register("Assunto")}
+                  {...register("Email")}
                   />
 
                   <Text >Mensagem:</Text>
@@ -117,10 +126,21 @@ export function Container_6() {
                   w='100%'
                   {...register("Mensagem")}
                   />
-                  <Button w='100%' type='submit'>
-                     Enviar
+                  <Button
+                    w='100%'
+                    type='submit'
+                    borderRadius={3}
+                    mt={8}
+                    _hover={{bg:'datBlue',
+                    transition:'360ms'}}
+                    cursor='pointer'
+                    bg={color}
+                    disabled={disable}
+                    color='white'
+                  >
+                     {sentText}
                   </Button>
-                  </form>
+                  </form> </FormControl>
                </Stack>
             </GridItem>
          </Grid>
@@ -142,16 +162,16 @@ export function Container_6() {
                   <SimpleGrid mx='auto' textAlign='right'>
                      <Box  fontSize='1.4rem' fontWeight='600'> Endereço/ Telefone </Box>
                      <Box  fontSize='1rem' fontWeight='400'> 
-                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-                     nonummy nibh euismod tincidunt 
-                     ut laoreet dolore mag
-                     </Box>
+                           <Text py={1}> (16) 99179-0291 </Text>
+                           <Text py={1}> Comercial@blendquimica.com.br </Text>
+                           <Text py={1}> Rua Domiciano Leite de Assis, 380 - Distrito industrial Adib Rassi </Text>
+                           <Text py={1}> CEP: 14680-000 - Jardinópolis-SP </Text>
+                        </Box>
                   </SimpleGrid >
                   <SimpleGrid ml='auto' w='9rem' columns={4}  fontSize='1.6rem'>
-                     <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/farmaciadaterra/'> <BsInstagram /> </Link>
-                     <Link  _hover={{color: "teal.400"}} mt='auto' href='https://www.facebook.com/daterraoficial?ref=hl'> <ImFacebook2/> </Link>
-                     <Link  _hover={{color: "teal.400"}} mt='auto' href='https://br.linkedin.com/company/daterra---farm%C3%A1cia-de-manipula%C3%A7%C3%A3o-e-cosm%C3%A9ticos'> <SiLinkedin/> </Link>
-                     <Link _hover={{fontSize:'3rem', transition:'200ms'}} mt='auto' color='#6cd474'fontSize='2.8rem' href='https://wa.me/5516992469499'> <RiWhatsappFill/> </Link>
+                     <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/blendquimica/'> <BsInstagram /> </Link>
+                     <Link  _hover={{color: "teal.400"}} mt='auto' href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <SiLinkedin/> </Link>
+                     <Link _hover={{fontSize:'3rem', transition:'200ms'}} mt='auto' color='#6cd474'fontSize='2.8rem' href='https://wa.me/5516991790291'> <RiWhatsappFill/> </Link>
                   </SimpleGrid >
                </SimpleGrid>
             </GridItem>
@@ -160,6 +180,7 @@ export function Container_6() {
                <Stack spacing={2} w='100%' textAlign='left'>
                   <Box  fontSize='1.2rem' fontWeight='600'> Envie-nos uma mensagem </Box>
                   
+                  <FormControl isRequired>
                   <form onSubmit={handleSubmit(onSubmit)}>
                   <Text>Empresa/ Pessoa:</Text>
                   <Input
@@ -170,14 +191,14 @@ export function Container_6() {
                   w='100%'
                   {...register("Empresa")}
                   />
-                  <Text >Assunto:</Text>
+                  <Text>E-mail:</Text>
                   <Input
-                  type='text'
+                  type='name'
                   my='10px'
-                  placeholder='Assunto'
+                  placeholder='Seu e-mail'
                   size='sm'
                   w='100%'
-                  {...register("Assunto")}
+                  {...register("Email")}
                   />
 
                   <Text >Mensagem:</Text>
@@ -189,10 +210,22 @@ export function Container_6() {
                   w='100%'
                   {...register("Mensagem")}
                   />
-                  <Button  w='100%' type='submit'>
-                        Enviar
+
+                  <Button
+                     w='100%'
+                     type='submit'
+                     borderRadius={3}
+                     mt={8}
+                     _hover={{bg:'datBlue',
+                     transition:'360ms'}}
+                     cursor='pointer'
+                     bg={color}
+                     disabled={disable}
+                     color='white'
+                     >
+                     {sentText}
                   </Button>
-                  </form>
+                  </form> </FormControl>
                </Stack>
             </GridItem>
          </Grid>
@@ -223,10 +256,9 @@ export function Container_6() {
                         </Box>
                      </SimpleGrid >
                      <SimpleGrid mt='15%' mr='auto' w='9rem' columns={4}  fontSize='1.6rem'>
-                        <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/farmaciadaterra/'> <BsInstagram /> </Link>
-                        <Link  _hover={{color: "teal.400"}} mt='auto' href='https://www.facebook.com/daterraoficial?ref=hl'> <ImFacebook2/> </Link>
-                        <Link  _hover={{color: "teal.400"}} mt='auto' href='https://br.linkedin.com/company/daterra---farm%C3%A1cia-de-manipula%C3%A7%C3%A3o-e-cosm%C3%A9ticos'> <SiLinkedin/> </Link>
-                        <Link _hover={{fontSize:'3rem', transition:'200ms'}} mt='auto' color='#6cd474'fontSize='2.8rem' href='https://wa.me/5516992469499'> <RiWhatsappFill/> </Link>
+                        <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/blendquimica/'> <BsInstagram /> </Link>
+                        <Link  _hover={{color: "teal.400"}} mt='auto' href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <SiLinkedin/> </Link>
+                        <Link _hover={{fontSize:'3rem', transition:'200ms'}} mt='auto' color='#6cd474'fontSize='2.8rem' href='https://wa.me/5516991790291'> <RiWhatsappFill/> </Link>
                      </SimpleGrid >
                   </SimpleGrid>
                </GridItem>
@@ -236,23 +268,25 @@ export function Container_6() {
                      <Box fontSize='1.2rem' fontWeight='600'> Envie-nos uma mensagem </Box>
                      
                      
+                     <FormControl isRequired>
                      <form onSubmit={handleSubmit(onSubmit)}>
                         <Text>Empresa/ Pessoa:</Text>
                         <Input
                         type='name'
                         my='10px'
-                        placeholder='Digite o nome de sua empresa'
+                        placeholder='Digite o seu nome ou o de sua empresa'
                         size='sm'
                         w='100%'
                         {...register("Empresa")}
                         />
-                        <Text >Assunto:</Text>
+                        <Text>E-mail:</Text>
                         <Input
-                        type='text'
-                        placeholder='Assunto'
+                        type='name'
+                        my='10px'
+                        placeholder='Seu e-mail'
                         size='sm'
                         w='100%'
-                        {...register("Assunto")}
+                        {...register("Email")}
                         />
 
                         <Text >Mensagem:</Text>
@@ -264,10 +298,21 @@ export function Container_6() {
                         {...register("Mensagem")}
                         />
                         
-                        <Button w='100%' my={1} type='submit'>
-                           Enviar
+                        <Button
+                        w='100%'
+                        type='submit'
+                        borderRadius={3}
+                        mt={8}
+                        _hover={{bg:'datBlue',
+                        transition:'360ms'}}
+                        cursor='pointer'
+                        bg={color}
+                        disabled={disable}
+                        color='white'
+                        >
+                        {sentText}
                         </Button>
-                     </form>
+                     </form> </FormControl>
 
                   </Stack>
                </GridItem>

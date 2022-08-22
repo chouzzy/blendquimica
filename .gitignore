@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> d35e506870bb37702509a0c2187668d543b2ca0d
 /node_modules
 /.pnp
 .pnp.js
@@ -18,8 +14,7 @@ yarn-error.log*
 .pnpm-debug.log*
 .env*.local
 .env
-<<<<<<< HEAD
+
 .vercel
 
-=======
->>>>>>> d35e506870bb37702509a0c2187668d543b2ca0d
+.vercel
