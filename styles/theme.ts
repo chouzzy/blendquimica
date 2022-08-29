@@ -8,6 +8,7 @@ export const theme = extendTheme({
    },
    colors: {
      datBlue: "#516BA5",
+     datShinyBlue: "#516BA5",
      datDarkBlue: "#15274c",
      datGreen:"#a5d320",
      datGreenActive:"#8de90d",

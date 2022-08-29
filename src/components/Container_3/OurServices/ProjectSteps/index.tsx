@@ -5,17 +5,17 @@ import { ItemSide } from "./ItemSide";
 import { useState } from "react";
 
 const sideMenuText = [
-   {  title:'Briefing e Definição do projeto',
-      description: <>Coleta de informação e entendimento do projeto.<br></br>O desenvolvimento leva em consideração <b>particularidades</b>, como ativos, cor, <b>fragrância</b> e sensorial. </>,
+   {  title:'1º Briefing e Definição do cosmético',
+      description: <>Coleta de informação e entendimento do cosmético.<br></br>O desenvolvimento leva em consideração <b>particularidades</b>, como ativos, cor, <b>fragrância</b> e sensorial. </>,
    },
-   {  title:'Aprovação de amostras',
+   {  title:'2º Aprovação de amostras',
       description:<>Enviamos as amostras ao cliente para <b>aprovação</b> do pedido solicitado.</>,
    },
-   {  title:'Rótulo e embalagem',
+   {  title:'3º Rótulo e embalagem',
       description:<>Definição do modelo, volume e design da <b>embalagem</b> e rótulo.</>,
    },
-   {  title:'Produção, Rotulagem e entrega',
-      description:<>Etapa em que o produto é <b>produzido</b> e fica <b>pronto</b> para ser comercializado.</>,
+   {  title:'4º Produção, Rotulagem e entrega',
+      description:<>Etapa em que o cosmético é <b>produzido</b> e fica <b>pronto</b> para ser comercializado.</>,
    },
 ]
 
@@ -34,10 +34,10 @@ export function ProjectSteps() {
    const [image, setImage] = useState("static/img/footer-menu/briefing.jpg")
    
    const sideMenuData = [
-      {id:1, name:'Briefing e definição do projeto', icon: <FaBrain/>, state:etapa1, setState:setEtapa1,active:activeColor1},
-      {id:2, name:'Aprovação de amostras', icon: <FaCalendarCheck/>, state:etapa2, setState:setEtapa2,active:activeColor2},
-      {id:3, name:'Rótulo e embalagem', icon: <GoPackage/>, state:etapa3, setState:setEtapa3,active:activeColor3},
-      {id:4, name:'Produção, Rotulagem e entrega', icon: <FaTruck/> , state:etapa4, setState:setEtapa4,active:activeColor4}
+      {id:1, name:'1º Briefing e definição do cosmético', icon: <FaBrain/>, state:etapa1, setState:setEtapa1,active:activeColor1},
+      {id:2, name:'2º Aprovação de amostras', icon: <FaCalendarCheck/>, state:etapa2, setState:setEtapa2,active:activeColor2},
+      {id:3, name:'3º Rótulo e embalagem', icon: <GoPackage/>, state:etapa3, setState:setEtapa3,active:activeColor3},
+      {id:4, name:'4º Produção, Rotulagem e entrega', icon: <FaTruck/> , state:etapa4, setState:setEtapa4,active:activeColor4}
    ]
    
    function changeMenu(setState, state, id) {
@@ -79,12 +79,12 @@ export function ProjectSteps() {
    return (
       <GridItem colSpan={12} bg={'white'} py={[0,0,0,8]}> 
       <Grid templateColumns='repeat(12, 1fr)'>
-         <GridItem colStart={[1,1,1,1,1]} colEnd={[13,13,13,4,4]} textTransform='uppercase'>
+         <GridItem colStart={[1,1,1,1,1]} colEnd={[13,13,13,4,4]}>
             <Grid px={[0,0,0,0,2]} py={4} h='100%' gap={[0,0,0,6,6]}
             templateColumns={['repeat(4, 1fr)','repeat(4, 1fr)','repeat(5, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)']} bg='gray.200' alignItems='center' border='1px solid #00000010'>
                
                <GridItem  color='datBlue' colStart={[1,1,1,1,1]} colEnd={[13,13,2,2,2]} py={[0,4,0,0]} textAlign='center' alignItems='center'>
-                  <Text fontSize={['1.8rem','1.8rem','1.6rem','1.8rem']} px={2} fontWeight='400'>
+                  <Text fontSize={['1.8rem','1.8rem','1.6rem','1.8rem']} px={2} fontWeight='400' textTransform='uppercase'>
                      Etapas de projeto
                   </Text>
                </GridItem>
@@ -111,7 +111,7 @@ export function ProjectSteps() {
          <GridItem colStart={[1,1,1,4,4]} colEnd={[13,7,7,8,8]} textTransform='uppercase'>
             <Image p={[8,8,6,8,8]} h='100%' objectFit='cover' src={image}/>
          </GridItem>
-         <GridItem colStart={[1,7,7,8,8]} mr={[0,4,8,8,8]} colEnd={[13,13,13,13,13]} border='1px solid #00000010' bg='gray.200' textTransform='uppercase'>
+         <GridItem colStart={[1,7,7,8,8]} mr={[0,4,8,8,8]} colEnd={[13,13,13,13,13]} border='1px solid #00000010' bg='gray.200' >
             <VStack p={[8,8,8,8,12]} spacing={4}>
                <Flex w='100%' mb='-10px'>
                      <Text fontSize={['1.3rem','1.5rem','2rem','2rem']} lineHeight={1.2} px={[0,0,0,2]} color='datGreenActive' fontWeight='600'>

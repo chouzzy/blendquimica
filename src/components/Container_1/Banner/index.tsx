@@ -18,10 +18,11 @@ export function Banner() {
          <VStack p={8} my='auto' borderRadius='lg' textShadow='1px 1px 1px #0000003a'>
 
             <Box textAlign='center'>
-               <Heading fontSize='2.4rem' fontWeight='400' mx='auto'>Nós somos a</Heading>
-               <Heading fontSize='3.2rem' color='white' mx='auto' >BLEND QUÍMICA</Heading>
-               <Text maxW={['95%','50%','50%','50%','50%']} my={4} fontSize='1.1rem' mx='auto' textAlign='center'>
-                  Empresa fundada para levar comprometimento, eficácia e qualidade aos nossos clientes.
+               <Heading fontSize='2.4rem' fontWeight='400' mx='auto'>Indústria de cosméticos</Heading>
+               <Heading fontSize='3.2rem' color='#3b6cd5' textShadow='1px 1px 1px #000000b0' mx='auto' >BLEND QUÍMICA</Heading>
+               <Text maxW={['95%','60%','60%','60%','60%']} my={4} fontSize='1.2rem' mx='auto' textAlign='center' textShadow='1px 1px 1px #000000b0'>
+               Desenvolvemos e produzimos <b> cosméticos personalizados </b>, do seu jeito, com a <b>sua</b> marca.
+
                </Text>
             </Box>
 

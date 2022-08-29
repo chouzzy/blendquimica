@@ -15,7 +15,7 @@ export function ItemSide(ItemSideProps) {
          {ItemSideProps.icon}
          </GridItem>
          <GridItem  colSpan={5}>
-         <Text textAlign={['center','center','center','left' ]} fontSize={['0.6rem','0.9rem','0.9rem','1rem']} fontWeight='500' _hover={{cursor:'pointer'}}> {ItemSideProps.name} </Text>
+         <Text textAlign={['center','center','center','left' ]} fontSize={['0.8rem','1rem','1.1rem','1.2rem']} fontWeight='500' _hover={{cursor:'pointer'}}> {ItemSideProps.name} </Text>
          </GridItem>
       </Grid>
    )

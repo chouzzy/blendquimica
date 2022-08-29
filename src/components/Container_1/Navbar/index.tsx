@@ -22,7 +22,7 @@ export function Navbar() {
    {id:'#Home', text:'Home', active:'active'},
    {id:'#segmentos', text:'Segmentos'},
    {id:'#serviços', text:'Serviços'},
-   {id:'#sobre', text:'Sobre nós'}, 
+   {id:'#sobre', text:'Quem somos'}, 
    {id:'#footer', text:'Fale conosco'}]
 
    return (

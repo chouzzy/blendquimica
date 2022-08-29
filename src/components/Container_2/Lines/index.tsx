@@ -41,20 +41,29 @@ export function Lines() {
    ]
    const segments = {
       text:'Segmentos de atuação',
-      subText:'Com o nosso time P&D e nossa linha de produção, estamos preparados para desenvolver e produzir formulações personalizadas com complexidades e formas diferentes.'
+      subText:'Com o nosso time P&D e nossa linha de produção, estamos preparados para desenvolver e produzir formulações personalizadas com complexidades e formas diferentes.',
+      dreamText:'Você tem um sonho? Nós temos a fórmula!',
+      dreamSubText:'Cada cosmético tem sua particularidade e acreditamos que a beleza está no detalhe. Traga as ideias e deixe que a NOSSA indústria cosmética te auxilie a coloca-las em prática, criando cosméticos de alta qualidade com a sua identidade.'
+      
    }
 
    return (
       <>
       <Grid boxSizing='border-box' alignItems='center' color='gray.600' my={[8,12,12,12,12]} 
-      templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)','repeat(3, 1fr)','repeat(3, 1fr)']}>
+      templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(3, 1fr)','repeat(3, 1fr)']}>
 
-      <GridItem pr={[0,1,1,0,0]} colStart={[0,1,1,1,1]} colEnd={[0,2,2,2,2]}>
-         <VStack mx='auto' maxW={['90%','84%','76%','76%','90%']} spacing={4} my={[8,24,24,24,24]}>
+      <GridItem pr={[0,0,1,0,0]} colStart={[0,0,1,1,1]} colEnd={[0,0,2,2,2]}>
+         <VStack mx='auto' maxW={['90%','90%','76%','76%','90%']} spacing={4} my={[8,8,24,24,24]} >
             <Text color='datDarkBlue' textAlign={['center','center','center','center']} fontSize='1.8rem' fontWeight='400' letterSpacing={1.4} textTransform='uppercase'>
                {segments.text}
             </Text>
-            <Text textAlign={['center','center','center','center']}>
+            <Text textAlign={['center','center','center','center']} fontSize='1.1rem' fontWeight='400' >
+               {segments.dreamText}
+            </Text>
+            <Text textAlign={['center','center','center','justify']}>
+               {segments.dreamSubText}
+            </Text>
+            <Text textAlign={['center','center','center','justify']}>
                {segments.subText}
             </Text>
             <Box cursor='pointer' color='datDarkBlue' p={4} _hover={{transition:'800ms', color:'#a5d320', borderRadius:'12px'}}>
@@ -73,7 +82,7 @@ export function Lines() {
          </VStack>
       </GridItem>
       
-      <GridItem colStart={[0,2,2,2,2]} colEnd={[0,4,4,4,4]} maxW={['95vw','90%','90%','90%']} borderRadius={8} mx='auto' color='gray.800' >
+      <GridItem colStart={[0,0,2,2,2]} colEnd={[0,0,4,4,4]} maxW={['95vw','95vw','90%','90%']} borderRadius={8} mx='auto' color='gray.800' >
          <Swiper
             spaceBetween={0}
             slidesPerView={slides}

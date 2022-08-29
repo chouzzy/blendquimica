@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
          <Head>
           {/* <!-- HTML Meta Tags --> */}
           <meta name="description" content="Empresa fundada para levar comprometimento, eficácia e qualidade aos nossos clientes."/>
+          <meta name="keywords" content="industria de cosmeticos, fábrica de cosmeticos, empresa fabricante de cosmeticos, cosmeticos, fabricante, fábrica, industria"/>
 
          {/* <!-- Facebook Meta Tags --> */}
          <meta property="og:url" content="https://www.blendquimica.com.br/"/>
