@@ -18,7 +18,6 @@ export default async (req,res) => {
       text: message,
       html: message.replace(/\r\n/g,'<br>')
    }
-   console.log("We're here")
 
    await mail.send(data).then((response) => {
       console.log(`tentativa ${sendTest}º: ${response[0].statusCode}`)
@@ -32,8 +31,34 @@ export default async (req,res) => {
    .catch((error) => {
      console.error(error)
    })
+   
+   const message2 = `
+   Nome/Empresa: ${body.Empresa}\r\n
+   Email: ${body.Email}\r\n
+   Messagem: ${body.Mensagem}
+   `;
+   const data2 = {
+      to:'comercial@blendquimica.com.br',
+      from: 'contato@awer.co',
+      subject: `Contato via site Blend Química`,
+      text: message2,
+      html: message2.replace(/\r\n/g,'<br>')
+   }
 
-   console.log('chegamos aqui')
+   await mail.send(data2).then((response) => {
+      console.log(`tentativa ${sendTest}º: ${response[0].statusCode}`)
+      while(response[0].statusCode != 202){
+         setTimeout(mail.send(data2), 500)
+         console.log(response[0].headers)
+         sendTest = sendTest + 1
+         console.log(`tentativa ${sendTest}º: ${response[0].statusCode}`)
+      }
+   })
+   .catch((error) => {
+     console.error(error)
+   })
+
+   console.log('E-mail enviado')
    res.status(200).json({status: 'Ok'})
    // Criar lógica do If status not 200, retry
 }
