@@ -64,7 +64,7 @@ export function Navbar() {
                <HStack justifyContent='center' alignItems='baseline' spacing={2} fontSize='1.3rem' color='datBlue'>
                   <Link _hover={{color: "teal.400"}} href='https://www.instagram.com/blendquimica/'> <BsInstagram /> </Link>
                   <Link  _hover={{color: "teal.400"}} href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <SiLinkedin/> </Link>
-                  <Link _hover={{fontSize:"3rem", transition:'200ms'}} color='#6cd474'fontSize='2.4rem' href='https://wa.me/5516991790291'> <RiWhatsappFill/> </Link>
+                  <Link _hover={{fontSize:"3rem", transition:'200ms'}} color='#6cd474'fontSize='2.4rem' href='https://wa.me/5516991790291?text=Olá, tudo bem? Acessei o site da Blend Química e gostaria de falar com um atendente.'> <RiWhatsappFill/> </Link>
                   {/* <Image w='70px' src='images/zap.png' alt='Dan Abramov' /> */}
                </HStack >
             </GridItem>
