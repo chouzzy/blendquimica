@@ -35,6 +35,7 @@ export default async (req,res) => {
    const message2 = `
    Nome/Empresa: ${body.Empresa}\r\n
    Email: ${body.Email}\r\n
+   Número: ${body.telefone}\r\n
    Messagem: ${body.Mensagem}
    `;
    const data2 = {
