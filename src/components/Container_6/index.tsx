@@ -117,6 +117,16 @@ export function Container_6() {
                   {...register("Email")}
                   />
 
+                  <Text>Número:</Text>
+                  <Input
+                  type='tel'
+                  my='10px'
+                  placeholder='DDD + Seu número (fixo ou celular)'
+                  size='sm'
+                  w='100%'
+                  {...register("telefone")}
+                  />
+
                   <Text >Mensagem:</Text>
                   <Input
                   type='text'
@@ -199,6 +209,16 @@ export function Container_6() {
                   size='sm'
                   w='100%'
                   {...register("Email")}
+                  />
+
+                  <Text>Número:</Text>
+                  <Input
+                  type='tel'
+                  my='10px'
+                  placeholder='DDD + Seu número (fixo ou celular)'
+                  size='sm'
+                  w='100%'
+                  {...register("telefone")}
                   />
 
                   <Text >Mensagem:</Text>
@@ -287,6 +307,16 @@ export function Container_6() {
                         size='sm'
                         w='100%'
                         {...register("Email")}
+                        />
+                           
+                        <Text>Número:</Text>
+                        <Input
+                        type='tel'
+                        my='10px'
+                        placeholder='DDD + Seu número (fixo ou celular)'
+                        size='sm'
+                        w='100%'
+                        {...register("telefone")}
                         />
 
                         <Text >Mensagem:</Text>
