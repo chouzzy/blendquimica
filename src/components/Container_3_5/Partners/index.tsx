@@ -37,7 +37,11 @@ export function Partners() {
       {id:1,image: 'static/img/fotos-blend/partner-1.jpg', text:'MATERA', subText:'Os melhores ativos para fazer os melhores produtos'},
       {id:2,image: 'static/img/fotos-blend/partner-2.jpg', text:'DARVORE', subText:'Fragrâncias diversas para perfumar o ambiente de forma natural e agradável'},
       {id:3,image: 'static/img/fotos-blend/partner-3.jpg', text:'Adê Bronze', subText:'Vamos repaginar a rotina de Skin Care dos seus clientes'},
-      {id:4,image: 'static/img/fotos-blend/partner-4.jpg', text:'DESPLAC', subText:'Os melhores produtos para um cronograma capilar perfeito'}
+      {id:4,image: 'static/img/fotos-blend/partner-4.jpg', text:'DESPLAC', subText:'Os melhores produtos para um cronograma capilar perfeito'},
+      // {id:5,image: 'static/img/fotos-blend/partner-5.jpg', text:'DESPLAC', subText:'Os melhores produtos para um cronograma capilar perfeito'},
+      {id:6,image: 'static/img/fotos-blend/partner-6.jpg', text:'LUMIÉRE', subText:'Os melhores produtos para um cronograma capilar perfeito'},
+      {id:7,image: 'static/img/fotos-blend/partner-7.jpg', text:'HOME', subText:'Os melhores produtos para um cronograma capilar perfeito'},
+      {id:8,image: 'static/img/fotos-blend/partner-8.jpg', text:'BIOSENSE', subText:'Os melhores produtos para um cronograma capilar perfeito'},
    ]
    const segments = {
       text:'Segmentos de atuação',
@@ -52,7 +56,7 @@ export function Partners() {
       <Grid boxSizing='border-box' alignItems='center' color='gray.600' my={[8,12,12,12,12]} 
       templateColumns={['repeat(1, 1fr)']}>
          <Flex py={4}>
-            <Heading fontWeight={200} color='datDarkBlue' w='100%' textAlign={'center'} textTransform='uppercase'>Nossos parceiros</Heading>
+            <Heading fontWeight={200} color='datDarkBlue' w='100%' textAlign={'center'} textTransform='uppercase'>Conheça alguns de nossos parceiros</Heading>
          </Flex>
       
       <GridItem maxW={'96vw'} mx='auto' color='gray.800'>
