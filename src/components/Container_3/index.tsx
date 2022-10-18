@@ -1,6 +1,4 @@
 import { Box, Container, Flex, Grid, GridItem, Image, SimpleGrid, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
-import {Link as Slink} from 'react-scroll'
-import { BsArrowUpCircle } from "react-icons/bs";
 import { OurServices } from "./OurServices";
 
 export function Container_3() { 
