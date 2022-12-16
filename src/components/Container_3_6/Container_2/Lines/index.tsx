@@ -13,7 +13,7 @@ export function Lines() {
 
    return (
       <>
-      <Heading mt={8} color='gray.600' fontWeight={200} fontSize={['4xl','3xl','3xl','3xl']}> SUSTENTABILIDADE</Heading>
+      <Heading mt={8} color='gray.600' fontWeight={200} fontSize={'4xl'}> SUSTENTABILIDADE</Heading>
 
       <Grid boxSizing='border-box' alignItems='center' color='gray.800' my={8}
       templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
