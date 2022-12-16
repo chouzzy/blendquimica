@@ -69,7 +69,7 @@ export function Lines() {
                src={'static/img/sustentabilidade/selo_cicle_only_cutted.png'} 
                _hover={{transform:'rotate(-720deg)', transition:'2000ms'}}
                />
-            <Text fontSize='sm' mx='auto' color={['gray.600']} position='absolute' bottom='0' left='0' right='0' textAlign={'center'}> Passe o mouse no selo e saiba mais!</Text>
+            <Text fontSize='sm' mx='auto' color={['gray.600']} position='absolute' bottom='0' left='0' right='0' textAlign={'center'}> Clique no selo acima e saiba mais!</Text>
             </Flex>
       </GridItem>
 
