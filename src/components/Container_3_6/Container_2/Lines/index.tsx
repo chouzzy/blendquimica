@@ -13,7 +13,7 @@ export function Lines() {
 
    return (
       <>
-      <Heading mt={8} color='gray.600' fontWeight={200}> SUSTENTABILIDADE</Heading>
+      <Heading mt={8} color='gray.600' fontWeight={200} fontSize={['4xl','3xl','3xl','3xl']}> SUSTENTABILIDADE</Heading>
 
       <Grid boxSizing='border-box' alignItems='center' color='gray.800' my={8}
       templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
@@ -25,7 +25,7 @@ export function Lines() {
 
             <Flex flexDir={'column'} justifyContent='center' align='center' gap={2} >
                
-               <Heading fontWeight={300} fontSize={['4xl','3xl','3xl','3xl']}>Energia solar</Heading>
+               <Heading fontWeight={200} fontSize={['3xl','3xl','3xl','3xl']}>Energia solar</Heading>
                
                <Text fontWeight={[200]} fontSize='xl' textAlign={'center'} color='black'>
                Temos o compromisso de investir em soluções sustentáveis para que o nosso planeta seja um lugar melhor para as futuras gerações. Com esse propósito, instalamos placas fotovoltaicas para que o funcionamento da Blend Química aconteça através de energia limpa e renovável.
@@ -47,10 +47,10 @@ export function Lines() {
          _hover={{opacity:1, transition:'2500ms'}}
          >
          
-            <Flex h='100%' w='100%' >
+            <Flex h='100%' w='90%' mx='auto'>
                <VStack p={4} my='auto'>
                   <Heading fontWeight={200}>Eureciclo</Heading>
-                  <Text fontWeight='200' textAlign={'center'}>
+                  <Text fontWeight={200} textAlign={'center'} fontSize='xl'>
                      Estamos sempre pensando em soluções que busquem causar menos impacto ambiental e preservar os recursos naturais. Agora, com muito orgulho, carregamos o sorriso do Eureciclo, buscando valorizar o trabalho de operadores de coleta seletiva e colaborar com o processo de compensação ambiental.
                   </Text>
                </VStack>
@@ -69,6 +69,7 @@ export function Lines() {
                src={'static/img/sustentabilidade/selo_cicle_only_cutted.png'} 
                _hover={{transform:'rotate(-720deg)', transition:'2000ms'}}
                />
+            <Text fontSize='sm' mx='auto' color={['gray.600']} position='absolute' bottom='0' left='0' right='0' textAlign={'center'}> Passe o mouse no selo e saiba mais!</Text>
             </Flex>
       </GridItem>
 
