@@ -85,7 +85,7 @@ export function Container_6() {
                         </Box>
                   </SimpleGrid >
                   <SimpleGrid mx='auto' w='9rem' columns={4}  fontSize='1.6rem'>
-                     <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/blendquimica/'> <BsInstagram /> </Link>
+                     <Link _hover={{color: "teal.400"}} mt='auto' href='https://www.instagram.com/blendquimica_cosmeticos/'> <BsInstagram /> </Link>
                      <Link  _hover={{color: "teal.400"}} mt='auto' href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <SiLinkedin/> </Link>
                      <Link _hover={{fontSize:'3rem', transition:'200ms'}} mt='auto' color='#6cd474'fontSize='2.8rem' href='https://wa.me/5516991790291'> <RiWhatsappFill/> </Link>
                   </SimpleGrid >
