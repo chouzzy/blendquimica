@@ -35,7 +35,7 @@ export function Lines() {
 
    const lines = [
       {id:1,image: 'static/img/footer-menu/dermo.png', text:'Dermo Care', subText:'Os melhores ativos para fazer os melhores produtos'},
-      {id:2,image: 'static/img/footer-menu/home.jpg', text:'Home Care', subText:'Fragrâncias diversas para perfumar o ambiente de forma natural e agradável'},
+      {id:2,image: 'static/img/footer-menu/home.jpg', text:'Home', subText:'Fragrâncias diversas para perfumar o ambiente de forma natural e agradável'},
       {id:3,image: 'static/img/footer-menu/skin-care.jpg', text:'Skin Care', subText:'Vamos repaginar a rotina de Skin Care dos seus clientes'},
       {id:4,image: 'static/img/footer-menu/hair-care.jpg', text:'Hair Care', subText:'Os melhores produtos para um cronograma capilar perfeito'}
    ]
