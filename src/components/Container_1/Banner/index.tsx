@@ -14,7 +14,7 @@ export function Banner() {
    return (
       <>
       
-      <Flex w='100%' fontFamily='Heebo' cursor='pointer' minH='80vh' boxShadow='lg' justifyContent='center' color='white' bgImage={['static/img/bequers.png','static/img/blend-4.gif','static/img/blend-4.gif','static/img/blend-4.gif']} bgSize='cover' onClick={onOpen}>
+      <Flex w='100%' fontFamily='Heebo' cursor='pointer' h='100%' boxShadow='lg' justifyContent='center' color='white' bgImage={['static/img/bequers.png','static/img/blend-4.gif','static/img/blend-4.gif','static/img/blend-4.gif']} bgSize='cover' onClick={onOpen}>
          <VStack p={8} my='auto' borderRadius='lg' textShadow='1px 1px 1px #0000003a'>
 
             <Box textAlign='center'>

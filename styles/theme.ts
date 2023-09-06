@@ -12,14 +12,18 @@ export const theme = extendTheme({
      datDarkBlue: "#15274c",
      datGreen:"#a5d320",
      datGreenActive:"#8de90d",
-     datGray: "#d1d3d4"
+     datGray: "#d1d3d4",
+     datBrown: "#b3866a",
+     datPerola: '#e5e4e1',
+     datMake: '#e6c3a1',
+     datMakeGold: '#e7c695'
    },
    styles: {
      global: {
        // styles for the `body`
         body: {
           bgRepeat:'no-repeat',
-          bgSize:'100%',
+          bgSize:'cover',
           bgAttachment:'fixed',
           bgImage: "static/img/folhas.jpg",
           color: 'gray.900',
