@@ -17,7 +17,7 @@ export default function Home () {
             <title>Blend Química</title>
          </Head>
          <Container_1/>
-         <Container_1_5/>
+         {/* <Container_1_5/> */}
          <Container_2/>
          <Container_3/>
          <Container_3_5/>

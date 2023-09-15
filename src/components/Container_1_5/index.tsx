@@ -15,6 +15,7 @@ export function Container_1_5() {
       <Container
          id='#segmentos'
          maxW='100vw'
+         h='100%'
          color='white'
          bgImage={'static/img/brindes/fundo-marrom.png'}
          bgColor='#FFFFFFBB'
