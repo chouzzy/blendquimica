@@ -15,7 +15,7 @@ export function MobileStack(imdobileVersion) {
                 <Text
                     fontSize={imdobileVersion ? 'md' : 'md'}
                     fontWeight='bold'
-                    color='datMakeGold'>
+                    color='datGreenBrindes'>
                     {brindes.saboneteLiquidoTitle}
                 </Text>
                 <Text fontSize={imdobileVersion ? 'md' : 'md'}>
@@ -33,7 +33,7 @@ export function MobileStack(imdobileVersion) {
                 <Text
                     fontSize={imdobileVersion ? 'md' : 'md'}
                     fontWeight='bold'
-                    color='datPerola'>
+                    color='datGreenBrindes'>
                     {brindes.difusorAmbienteTitle}
                 </Text>
                 <Text fontSize={imdobileVersion ? 'md' : 'md'}>
@@ -51,7 +51,7 @@ export function MobileStack(imdobileVersion) {
                 <Text
                     fontSize={imdobileVersion ? 'md' : 'md'}
                     fontWeight='bold'
-                    color='datMakeGold'>
+                    color='datGreenBrindes'>
                     {brindes.velaAromaticaTitle}
                 </Text>
                 <Text fontSize={imdobileVersion ? 'md' : 'md'}>

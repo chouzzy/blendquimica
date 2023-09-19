@@ -12,6 +12,7 @@ export const theme = extendTheme({
      datDarkBlue: "#15274c",
      datGreen:"#a5d320",
      datGreenActive:"#8de90d",
+     datGreenBrindes:"#c8d404",
      datGray: "#d1d3d4",
      datBrown: "#b3866a",
      datPerola: '#e5e4e1',
