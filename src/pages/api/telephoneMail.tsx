@@ -10,7 +10,7 @@ export default async (req,res) => {
    
    const message = `
    Contato de Whatsapp enviado via site Blend Química - Enviado na sessão de brindes: \r\n
-   WhatsApp: ${body.telephone}\r\n
+   WhatsApp: ${body}\r\n
    `;
    const data = {
       to:'matheus@awer.co',
