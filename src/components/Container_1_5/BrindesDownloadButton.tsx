@@ -1,4 +1,4 @@
-import { Flex, Text, useDisclosure, FormControl, VStack, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from '@chakra-ui/react';
+import { Flex, Text, useDisclosure, FormControl, VStack, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Spinner } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { PhoneInput } from './PhoneInput';
@@ -24,6 +24,7 @@ export function BrindesDownloadButton(props: FlexProps) {
     const [phone, setPhone] = useState("")
     const [disabled, setDisabled] = useState(false)
     const [buttonText, setButtonText] = useState("Falar conosco")
+    const [loading, setLoading] = useState(false)
 
     function SendTelephoneViaEmail(telephone: string) {
 
@@ -31,6 +32,7 @@ export function BrindesDownloadButton(props: FlexProps) {
 
             setDisabled(true)
             setButtonText("Obrigado!")
+            setLoading(true)
 
             setTimeout(() => {
                 fetch('/api/telephoneMail', {
@@ -113,9 +115,10 @@ export function BrindesDownloadButton(props: FlexProps) {
                                 borderRadius={2}
                                 gap={3}
                                 p={2}
-                                boxShadow='2px 2px 1px #000000bb'>
+                                boxShadow='2px 2px 1px #000000bb'
+                            >
 
-                                <Text color='white'>{buttonText} </Text>
+                                {loading ? <Spinner color="white" size="sm" /> : <Text color='white'>{buttonText} </Text>}
                                 <BsWhatsapp fontSize={'1.4rem'} color='white' />
                             </Button>
                         </VStack>
@@ -128,3 +131,4 @@ export function BrindesDownloadButton(props: FlexProps) {
         </Flex >
     )
 }
+
