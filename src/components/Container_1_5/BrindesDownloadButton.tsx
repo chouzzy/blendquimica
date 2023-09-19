@@ -25,25 +25,6 @@ export function BrindesDownloadButton(props: FlexProps) {
     const [disabled, setDisabled] = useState(false)
     const [buttonText, setButtonText] = useState("Falar conosco")
 
-    const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
-
-    useEffect(() => {
-        const updateScreenSize = () => {
-            setScreenSize({ width: window.innerWidth, height: window.innerHeight });
-        };
-
-        // Chama a função de atualizar o tamanho da tela quando o componente for montado
-        updateScreenSize();
-
-        // Adiciona um ouvinte de evento para atualizar o tamanho da tela quando a janela for redimensionada
-        window.addEventListener('resize', updateScreenSize);
-
-        // Remove o ouvinte de evento quando o componente for desmontado para evitar vazamentos de memória
-        return () => {
-            window.removeEventListener('resize', updateScreenSize);
-        };
-    }, []);
-
     function SendTelephoneViaEmail(telephone: string) {
 
         return new Promise(() => {
@@ -63,7 +44,6 @@ export function BrindesDownloadButton(props: FlexProps) {
     return (
 
         <Flex>
-
 
             <Flex
                 cursor='pointer'

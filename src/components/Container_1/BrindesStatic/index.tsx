@@ -13,7 +13,7 @@ export function BrindesStatic() {
 
    return (
       <Container
-         id='#segmentos'
+         id='#Brindes'
          position={'relative'}
          maxW='100vw'
          h='100%'

@@ -20,6 +20,7 @@ export function Navbar() {
 
    const navItems= [
    {id:'#Home', text:'Home', active:'active'},
+   {id:'#Brindes', text:'Brindes'},
    {id:'#segmentos', text:'Segmentos'},
    {id:'#serviços', text:'Serviços'},
    {id:'#sobre', text:'Quem somos'}, 

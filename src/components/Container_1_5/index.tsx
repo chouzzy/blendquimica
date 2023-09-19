@@ -14,7 +14,7 @@ export function Container_1_5() {
 
    return (
       <Container
-         id='#segmentos'
+         id='#Brindes'
          maxW='100vw'
          h='100%'
          color='white'
@@ -53,8 +53,6 @@ export function Container_1_5() {
                width={['90%', '100%', '64%', '36%']}
                height='auto'
                borderRadius={8} />
-            :
-
             <VStack
                justifyContent='space-between'
                pb={12}>
