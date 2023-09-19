@@ -37,6 +37,9 @@ export function BrindesDownloadButton(props: FlexProps) {
                     method: 'post',
                     body: JSON.stringify(telephone)
                 })
+                .then(() => {
+                    window.location.href = 'https://drive.google.com/u/5/uc?id=1JVB0hHKLn3UCJSIePJC8lCZRX2bedMR2&export=download';
+                  })
             }, 2000)
         })
     }
