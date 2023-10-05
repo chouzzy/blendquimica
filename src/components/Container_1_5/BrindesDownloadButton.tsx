@@ -90,6 +90,7 @@ export function BrindesDownloadButton(props: FlexProps) {
                 <ModalOverlay />
                 <ModalContent
                     p={8}
+                    m={2}
                     bg='#0f1d27'
                     borderRadius={2}
                 >
@@ -118,7 +119,7 @@ export function BrindesDownloadButton(props: FlexProps) {
                                 boxShadow='2px 2px 1px #000000bb'
                             >
 
-                                {loading ? <Spinner color="white" size="sm" /> : <Text color='white'>{buttonText} </Text>}
+                                {loading ? <Flex> <Text fontWeight={300} color='white' mr={2}>Aguarde... </Text> <Spinner color="white" size="sm"> </Spinner> </Flex>: <Text color='white'>{buttonText} </Text>}
                                 <BsWhatsapp fontSize={'1.4rem'} color='white' />
                             </Button>
                         </VStack>
