@@ -12,7 +12,7 @@ export function ModalMenu(ModalMenuProps) {
       'instagram':'https://www.instagram.com/farmaciadaterra/',
       'facebook':'https://www.facebook.com/daterraoficial?ref=hl',
       'linkedin':'https://br.linkedin.com/company/daterra---farm%C3%A1cia-de-manipula%C3%A7%C3%A3o-e-cosm%C3%A9ticos',
-      'whatsapp':'https://wa.me/5516992469499'
+      'whatsapp':'https://wa.me/5516991790291'
    }
    const { isOpen, onToggle } = useDisclosure()
 

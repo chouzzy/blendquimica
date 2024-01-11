@@ -35,7 +35,8 @@ export function Container_1() {
          <Container id='#Home' maxW='100vw' h='100%' bg='gray.500' p='0' m='0' centerContent>
             <Navbar />
             <Flex maxW={'100%'} h='100%'>
-               <Swiper
+            <Banner />
+               {/* <Swiper
                   spaceBetween={40}
                   slidesPerView={1}
                   navigation
@@ -57,7 +58,7 @@ export function Container_1() {
                      }
                   </SwiperSlide>
 
-               </Swiper>
+               </Swiper> */}
             </Flex>
             {/* Grid 5 images */}
          </Container>
