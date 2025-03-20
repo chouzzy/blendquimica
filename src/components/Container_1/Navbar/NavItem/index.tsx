@@ -1,11 +1,7 @@
-import { Button, useBreakpointValue, Grid, GridItem,Link, Image, Box, HStack, SimpleGrid} from "@chakra-ui/react"
+import { Box} from "@chakra-ui/react"
 
 import {Link as Slink} from 'react-scroll'
-import { BsInstagram } from "react-icons/bs";
-import { ImFacebook2 } from "react-icons/im";
 
-import { RiWhatsappFill, RiMenuLine } from "react-icons/ri";
-import { SiLinkedin } from "react-icons/si";
 
 export function NavItem(NavItemProps) {
    return (

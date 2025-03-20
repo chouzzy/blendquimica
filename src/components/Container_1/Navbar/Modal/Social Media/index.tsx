@@ -1,9 +1,5 @@
-import { useDisclosure, Box, Button, Collapse, useBreakpointValue, Grid, GridItem, Image, Heading, Text, VStack, Flex, Link, HStack} from "@chakra-ui/react"
-import { BsInstagram } from "react-icons/bs";
-import { ImFacebook2 } from "react-icons/im";
+import { Text, Link} from "@chakra-ui/react"
 
-import { RiWhatsappFill } from "react-icons/ri";
-import { SiLinkedin } from "react-icons/si";
 
 export function SocialMedia(media_content) {
    return (
