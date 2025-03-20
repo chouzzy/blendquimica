@@ -1,6 +1,4 @@
-import { Box, Button, Collapse, Container, Flex, Grid, GridItem, HStack, Image, List, ListIcon, ListItem, ScaleFade, SlideFade, Text, useBreakpointValue, useDisclosure, VStack } from "@chakra-ui/react";
-import { BsChevronDoubleDown } from "react-icons/bs";
-import { MdCheckCircle } from "react-icons/md";
+import { Box, Button, Collapse, Grid, GridItem, List } from "@chakra-ui/react";
 import { ServiceListItem } from "./ServiceListItem";
 import animationData from "../../../../../../public/animations/production.json";
 import { ArrowDown } from "phosphor-react";

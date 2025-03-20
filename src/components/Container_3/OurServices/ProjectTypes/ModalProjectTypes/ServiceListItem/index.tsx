@@ -1,6 +1,3 @@
-import { Box, Button, Collapse, Container, Grid, GridItem, HStack, Image, List, ListIcon, ListItem, ScaleFade, SlideFade, Text, useBreakpointValue, useDisclosure, VStack } from "@chakra-ui/react";
-import { BsChevronDoubleDown } from "react-icons/bs";
-import { AiOutlineCheck } from "react-icons/ai";
 
 export function ServiceListItem(Props) { 
    return (

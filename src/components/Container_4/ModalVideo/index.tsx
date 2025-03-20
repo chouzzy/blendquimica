@@ -15,7 +15,7 @@ export function ModalVideo(teamProps) {
 
             <GridItem mx='auto'>
                <Button boxShadow='lg' fontSize='1.8rem' color='datDarkBlue' border='1px solid #00000018' size='lg' w={16} p={2}  _hover={{bg:'datGreen'}} onClick={teamProps.modal.onToggle}>
-                  <BsChevronDoubleDown/>
+                  {/* <BsChevronDoubleDown/> */}
                </Button>
 
             </GridItem>

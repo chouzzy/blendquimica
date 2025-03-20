@@ -26,7 +26,7 @@ export function ModalProjectTypes(Props) {
 
             <GridItem mx='auto'>
                <Button fontSize='1.4rem' bg='none' p={0} color='datGreen' _hover={{ color: 'datBlue', transition: '200ms' }} onClick={Props.modal.onToggle}>
-                  <BsChevronDoubleDown />
+                  {/* <BsChevronDoubleDown /> */}
                </Button>
 
             </GridItem>
