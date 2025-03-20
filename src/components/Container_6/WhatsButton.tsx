@@ -1,7 +1,5 @@
 import { Flex, Link, Text } from "@chakra-ui/react";
 import { WhatsappLogo } from "phosphor-react";
-import { BsWhatsapp } from "react-icons/bs";
-import { RiWhatsappFill } from "react-icons/ri";
 
 
 export default function WhatsButton() {
@@ -22,7 +20,7 @@ export default function WhatsButton() {
                     transition: ' 400ms', fontSize: '2.4rem'
                 }}
                 cursor='pointer'>
-                <BsWhatsapp />
+                <WhatsappLogo weight="fill" />
             </Flex>
         </Link>
     )

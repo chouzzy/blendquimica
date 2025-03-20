@@ -1,6 +1,6 @@
 import { Flex, Text, useDisclosure, FormControl, VStack, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Spinner } from '@chakra-ui/react';
+import { WhatsappLogo } from 'phosphor-react';
 import { useEffect, useState } from 'react';
-import { BsWhatsapp } from 'react-icons/bs';
 import { PhoneInput } from './PhoneInput';
 
 interface FlexProps {
@@ -120,7 +120,7 @@ export function BrindesDownloadButton(props: FlexProps) {
                             >
 
                                 {loading ? <Flex> <Text fontWeight={300} color='white' mr={2}>Aguarde... </Text> <Spinner color="white" size="sm"> </Spinner> </Flex>: <Text color='white'>{buttonText} </Text>}
-                                <BsWhatsapp fontSize={'1.4rem'} color='white' />
+                                <WhatsappLogo fontSize={'1.4rem'} color='white' />
                             </Button>
                         </VStack>
 
