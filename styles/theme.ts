@@ -17,7 +17,8 @@ export const theme = extendTheme({
      datBrown: "#b3866a",
      datPerola: '#e5e4e1',
      datMake: '#e6c3a1',
-     datMakeGold: '#e7c695'
+     datMakeGold: '#e7c695',
+     blendDarkBlue:'#032963',
    },
    styles: {
      global: {

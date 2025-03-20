@@ -8,7 +8,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import { LineItem } from "./LineItem";
 import animationData from "../../../../public/animations/catalog.json";
-import Lottie from 'react-lottie'
+// import Lottie from 'react-lottie'
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay ])
@@ -69,7 +69,7 @@ export function Lines() {
             <Box cursor='pointer' color='datDarkBlue' p={4} _hover={{transition:'800ms', color:'#a5d320', borderRadius:'12px'}}>
                <Link href='https://drive.google.com/u/1/uc?id=1U7C1UXQjjkB25hvirFsFu8_f8oDGKIiB&export=download'>
                   <Box maxW='102px' mx='auto'>
-                     <Lottie options={defaultOptions} cursor='none' />
+                     {/* <Lottie options={defaultOptions} cursor='none' /> */}
                   </Box>
                </Link>
                <Flex  fontSize='2rem' fontWeight='400' alignItems='center' textAlign='center'>

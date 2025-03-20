@@ -8,8 +8,6 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import { LineItem } from "./LineItem";
 import animationData from "../../../../public/animations/catalog.json";
-import Lottie from 'react-lottie'
-import { FaCloudDownloadAlt } from "react-icons/fa";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay ])
 

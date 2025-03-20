@@ -1,12 +1,18 @@
 import { Box, Container, Flex, Grid, GridItem, Image, SimpleGrid, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
+import { slugify } from "../../utils";
+import { Differences } from "./Differences";
 import { OurServices } from "./OurServices";
 
-export function Container_3() { 
+interface Container_3Props {
+   id: string
+}
+
+export function Container_3({ id }: Container_3Props) {
 
    return (
-      <Container id='#serviços' maxW='100vw'
-      bgGradient={['white','white','linear(to-br, #15274c3a 15%, #15274c98 90%)','linear(to-br, #15274c3a 15%, #15274c98 90%)']} p='0' m='0' centerContent>
-         <OurServices/>
-      </Container> 
+      <Container id={slugify(id)} maxW='100vw' color='white' bg='white' p='0' m='0' centerContent>
+         {/* <OurServices /> */}
+         <Differences />
+      </Container>
    )
 }

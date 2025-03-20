@@ -3,7 +3,8 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import { MdCheckCircle } from "react-icons/md";
 import { ServiceListItem } from "./ServiceListItem";
 import animationData from "../../../../../../public/animations/production.json";
-import Lottie from 'react-lottie'
+// import Lottie from 'react-lottie'
+// import Lottie from "lottie-react";
 
 export function ModalProjectTypes(Props) { 
    const defaultOptions = {
@@ -31,7 +32,7 @@ export function ModalProjectTypes(Props) {
                   ''
                   :
                   <Box p={6}>
-                     <Lottie options={defaultOptions} cursor='none' />
+                     {/* <Lottie animationData={animationData} loop={true} /> */}
                   </Box>
                   }
                      <List spacing={2} my={8} px={[8,8,4,8]} justifyContent='center' textAlign='left'>

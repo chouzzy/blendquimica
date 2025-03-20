@@ -13,11 +13,15 @@ import { Lines } from "../Container_2/Lines";
 import { Container_1_5 } from "../Container_1_5";
 import { BrindesStatic } from "./BrindesStatic";
 import { BrindesDownloadButton } from "../Container_1_5/BrindesDownloadButton";
+import { slugify } from "../../utils";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay])
 
-
-export function Container_1() {
+interface Container_1Props {
+   id: string
+   ids: string[]
+}
+export function Container_1({ id, ids }: Container_1Props) {
    // useEffect( () => alert('Site em construção 🚜'),[])
 
    const isMobileVersion = useBreakpointValue({
@@ -32,33 +36,10 @@ export function Container_1() {
 
       <>
 
-         <Container id='#Home' maxW='100vw' h='100%' bg='gray.500' p='0' m='0' centerContent>
-            <Navbar />
+         <Container id={slugify(id)} maxW='100vw' h='100%' bg='gray.500' p='0' m='0' centerContent>
+            <Navbar ids={ids} />
             <Flex maxW={'100%'} h='100%'>
-            <Banner />
-               {/* <Swiper
-                  spaceBetween={40}
-                  slidesPerView={1}
-                  navigation
-                  autoplay
-                  speed={2000}
-                  loop
-                  // onSlideChange={() => console.log('slide change')}
-                  onSwiper={(swiper) => console.log(swiper)}
-               >
-                  <SwiperSlide >
-                     <Banner />
-                  </SwiperSlide>
-                  <SwiperSlide >
-
-                     {isMobileVersion ?
-                        <Container_1_5 />
-                        :
-                        <BrindesStatic />
-                     }
-                  </SwiperSlide>
-
-               </Swiper> */}
+               <Banner />
             </Flex>
             {/* Grid 5 images */}
          </Container>

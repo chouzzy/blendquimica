@@ -1,5 +1,5 @@
 import { Box, Container, Flex, Heading, Link, Text } from '@chakra-ui/react'
-import Lottie from 'react-lottie'
+// import Lottie from 'react-lottie'
 import animationData from '../../public/animations/404.json';
 
 export default function NotFound () {
@@ -22,10 +22,10 @@ export default function NotFound () {
                   Erro 404
                </Text>
             </Flex>
-            <Lottie 
+            {/* <Lottie 
                options={defaultOptions}
                cursor='none'
-            />
+            /> */}
          </Box>
             <Link _hover={{color: "datGreen"}} color='white' mx='auto' cursor='pointer'  border='1px' borderRadius={4} p={2} href='/'>
                Clique aqui para voltar
