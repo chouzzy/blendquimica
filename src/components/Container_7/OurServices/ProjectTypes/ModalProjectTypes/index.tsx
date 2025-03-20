@@ -4,6 +4,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import { ServiceListItem } from "./ServiceListItem";
 import animationData from "../../../../../../public/animations/production.json";
 import dynamic from "next/dynamic";
+import { ArrowDown } from "phosphor-react";
 
 
 export function ModalProjectTypes(Props) {
@@ -26,7 +27,7 @@ export function ModalProjectTypes(Props) {
 
             <GridItem mx='auto'>
                <Button fontSize='1.4rem' bg='none' p={0} color='datGreen' _hover={{ color: 'datBlue', transition: '200ms' }} onClick={Props.modal.onToggle}>
-                  {/* <BsChevronDoubleDown /> */}
+                  <ArrowDown />
                </Button>
 
             </GridItem>
