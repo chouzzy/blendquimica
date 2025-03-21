@@ -19,7 +19,7 @@ interface Container_9Props {
 export function Container_9({ id }: Container_9Props) {
 
     const logos = [
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/logo-1.png', alt: 'Logo 1' },
         { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 2' },
         { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 3' },
         { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
