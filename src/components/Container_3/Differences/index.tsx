@@ -21,8 +21,8 @@ export function Differences() {
             ]
         },
         {
-            titulo: `Lote mínimo de produção de 300 unidades`,
-            image: 'static/v2/box-icon.png',
+            titulo: `Selo EU RECICLO`,
+            image: 'static/v2/eu-reciclo.png',
             subtitulo: "Fabricação de cosméticos com Inteligência de mercado aplicada ao que traz tração ao negócio de nossos clientes Pesquisa e Desenvolvimento de Cosméticos, Marketing e Comercial Equipes constantemente atualizadas e treinadas para oferecer o que há de melhor no mercado cosmético",
             beneficios: [
                 "Soluções transformadoras",
@@ -31,8 +31,18 @@ export function Differences() {
             ]
         },
         {
-            titulo: "Envio de amostras sem custo",
-            image: 'static/v2/free-delivery-pd.png',
+            titulo: "Energia sustentável",
+            image: 'static/v2/energia-sus.png',
+            subtitulo: "Otimização de processo produtivo é sinônimo de qualidade, agilidade e cadeia de valor eficaz, tida; enquanto indústria de cosméticos, possuímos esse processo muito bem estruturado para levar competitividade e qualidade aos nossos clientes.",
+            beneficios: [
+                "Melhoria Processual",
+                "Contínua Inteligência em Processos Produtivos",
+                "Entrega em Tempo Hábil"
+            ]
+        },
+        {
+            titulo: "Desenvolvimento de amostras",
+            image: 'static/v2/sample.png',
             subtitulo: "Otimização de processo produtivo é sinônimo de qualidade, agilidade e cadeia de valor eficaz, tida; enquanto indústria de cosméticos, possuímos esse processo muito bem estruturado para levar competitividade e qualidade aos nossos clientes.",
             beneficios: [
                 "Melhoria Processual",
