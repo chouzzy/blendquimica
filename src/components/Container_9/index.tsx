@@ -20,15 +20,18 @@ export function Container_9({ id }: Container_9Props) {
 
     const logos = [
         { src: 'static/v2/parceiros/logo-1.png', alt: 'Logo 1' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 2' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 3' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
-        { src: 'static/v2/imgnotfound.jpg', alt: 'Logo 4' },
+        { src: 'static/v2/parceiros/baruch.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/daterra.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/desplac.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/farmaformula.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/fonju.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/gabgab.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/glow.png', alt: 'Logo 1' },
+        // { src: 'static/v2/parceiros/indoor.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/kakau.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/ramaga.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/sellevia.png', alt: 'Logo 1' },
+        { src: 'static/v2/parceiros/sunny.png', alt: 'Logo 1' }
     ]
 
     const textColor = useColorModeValue("gray.600", "gray.400");
@@ -77,7 +80,8 @@ export function Container_9({ id }: Container_9Props) {
                                 alt={logo.alt}
                                 // width="auto"         // Largura automática (ocupa 100% do container pai)
                                 // height="auto" // Altura automática (mantém a proporção)
-                                width={[80, 80, 80, '100%', '100%']}
+                                // width={[80, 80, 80, '100%', '100%']}
+                                boxSize={80}
                                 objectFit="contain" // Garante que a imagem caiba dentro do container sem distorcer
                             />
 
