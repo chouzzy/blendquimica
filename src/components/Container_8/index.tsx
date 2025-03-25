@@ -75,11 +75,11 @@ export function Container_8({ id }: Container_8Props) {
                         Quais são as etapas do nosso projeto?
                     </Text>
                 </Flex>
-                <Stepper index={4} orientation={orientationResp} width="full" gap={4} colorScheme='blue'>
+                <Stepper index={activeStep} orientation={orientationResp} width="full" gap={4} colorScheme='blue' border={'1px solid #00000033'} borderRadius={20} p={8}>
                     {etapas.map((etapa, index) => (
-                        <Flex key={etapa.number + index} flexDir={'column'} w='100%' >
+                        <Flex key={etapa.number + index} flexDir={'column'} w='100%'>
 
-                            <Step key={index}>
+                            <Step key={index} onClick={() => setActiveStep(index + 1)}>
                                 <StepIndicator w={['100%', '100%', '100%', 32, 32]} h={16} borderRadius={4}>
                                     {etapa.icon}
                                 </StepIndicator>

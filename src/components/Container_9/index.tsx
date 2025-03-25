@@ -92,7 +92,7 @@ export function Container_9({ id }: Container_9Props) {
                 {/* Texto "+270 clientes" */}
                 <Flex w="full" justifyContent="center" mt={4} p={4}>
                     <Text fontSize="lg" fontWeight="bold" color={textColor}>
-                        +100 clientes
+                        +200 clientes
                     </Text>
                 </Flex>
             </Flex>

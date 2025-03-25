@@ -27,8 +27,8 @@ export function Products() {
       base: 1,
       sm: 1,
       md: 2,
-      lg: 3,
-      xl: 4
+      lg: 2,
+      xl: 3
    })
 
    const lines = [
@@ -46,7 +46,7 @@ export function Products() {
                <Heading fontWeight={200} color='datDarkBlue' w='100%' textAlign={'center'} textTransform='uppercase'>Categorias de produtos</Heading>
             </Flex>
 
-            <GridItem maxW={['100vw','100vw','100vw','100vw',1920]} mx='auto' color='gray.800'>
+            <GridItem maxW={['90vw','90vw','90vw','90vw','90vw']} mx='auto' color='gray.800'>
                <Swiper
                   spaceBetween={40}
                   slidesPerView={slides}
