@@ -79,7 +79,7 @@ export function Container_8({ id }: Container_8Props) {
                     {etapas.map((etapa, index) => (
                         <Flex key={etapa.number + index} flexDir={'column'} w='100%'>
 
-                            <Step key={index} onClick={() => setActiveStep(index + 1)}>
+                            <Step key={index} onClick={() => setActiveStep(index + 1)} cursor='pointer'>
                                 <StepIndicator w={['100%', '100%', '100%', 32, 32]} h={16} borderRadius={4}>
                                     {etapa.icon}
                                 </StepIndicator>
