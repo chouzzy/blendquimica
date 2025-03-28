@@ -39,7 +39,7 @@ export function Container_10({ ids }: FooterProps) {
             p={8}
             color={'white'}
             width="full"
-            mt={10}
+            mt={2}
             maxW={1920}
         >
             {/* Coluna "NAVEGAR PELO SITE" */}

@@ -41,9 +41,9 @@ export function Products() {
 
    return (
       <>
-         <Flex flexDir={'column'} boxSizing='border-box' alignItems='center' color='gray.600' my={[8, 12, 12, 12, 12]} mx='auto'>
+         <Flex flexDir={'column'} boxSizing='border-box' alignItems='center' color='gray.600' my={[6]} mx='auto'>
             <Flex py={4}>
-               <Heading fontWeight={200} color='datDarkBlue' w='100%' textAlign={'center'} textTransform='uppercase'>Categorias de produtos</Heading>
+               <Heading fontWeight={400}  color='datDarkBlue' w='100%' textAlign={'center'} textTransform='uppercase'>Categorias de produtos</Heading>
             </Flex>
 
             <GridItem maxW={['90vw','90vw','90vw','90vw','90vw']} mx='auto' color='gray.800'>

@@ -65,7 +65,7 @@ export function Differences() {
     return (
         <Flex p={8} flexDir='column' gap={4} color='datDarkBlue'  maxW={1920} >
             <Flex justifyContent={'center'} alignItems='center'>
-                <Text fontSize={['2xl','2xl','2xl','4xl','4xl']} fontWeight={200} textTransform='uppercase' textAlign={['center']}>
+                <Text fontSize={['2xl','2xl','2xl','4xl','4xl']} fontWeight={400} textTransform='uppercase' textAlign={['center']}>
                     Nossos diferenciais
                 </Text>
             </Flex>
@@ -77,7 +77,7 @@ export function Differences() {
 
                             <Flex alignItems={'center'} justifyContent='center' flexDir={'column'} gap={4} >
                                 <Flex>
-                                    <Image src={diference.image} minH={40} h={40} />
+                                    <Image src={diference.image} minH={32} h={32} />
                                 </Flex>
 
                                 <Flex flexDir={'column'} gap={2}>

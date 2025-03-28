@@ -67,11 +67,11 @@ export function Container_8({ id }: Container_8Props) {
                 align="center" // Centraliza horizontalmente
                 px={8}
                 gap={12}
-                pt={20}
+                pt={8}
                 maxW={1920}
             >
                 <Flex justifyContent={'center'} alignItems='center'>
-                    <Text fontSize={['2xl', '2xl', '2xl', '4xl', '4xl']} fontWeight={200} textTransform='uppercase' textAlign={['center']}>
+                    <Text fontSize={['2xl', '2xl', '2xl', '4xl', '4xl']} fontWeight={400}  textTransform='uppercase' textAlign={['center']}>
                         Quais são as etapas do nosso projeto?
                     </Text>
                 </Flex>
