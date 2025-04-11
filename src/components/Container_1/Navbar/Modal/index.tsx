@@ -1,7 +1,9 @@
 import { useDisclosure, Box, Button, Collapse, VStack, HStack} from "@chakra-ui/react"
+import { useRouter } from "next/router";
 import { FacebookLogo, InstagramLogo, LinkedinLogo, List, WhatsappLogo } from "phosphor-react";
 
 import { RiMenuLine } from "react-icons/ri";
+import { whatsappLink } from "../../../../utils";
 import { NavItem } from "../NavItem";
 import { SocialMedia } from "./Social Media";
 
@@ -10,7 +12,7 @@ export function ModalMenu(ModalMenuProps) {
       'instagram':'https://www.instagram.com/farmaciadaterra/',
       'facebook':'https://www.facebook.com/daterraoficial?ref=hl',
       'linkedin':'https://br.linkedin.com/company/daterra---farm%C3%A1cia-de-manipula%C3%A7%C3%A3o-e-cosm%C3%A9ticos',
-      'whatsapp':'https://wa.me/5516991790291'
+      'whatsapp':whatsappLink(useRouter().pathname)
    }
    const { isOpen, onToggle } = useDisclosure()
 

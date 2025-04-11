@@ -1,10 +1,12 @@
 import { Flex, Link, Text } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { WhatsappLogo } from "phosphor-react";
+import { whatsappLink } from "../../utils";
 
 
 export default function WhatsButton() {
     return (
-        <Link href='https://wa.me/5516991790291?text=Olá, tudo bem? Acessei o site da BlendQuímica e gostaria de falar com um atendente.' target="_blank">
+        <Link href={whatsappLink(useRouter().pathname)} target="_blank">
 
             <Flex
                 bg='#25D366'

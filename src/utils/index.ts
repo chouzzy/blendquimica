@@ -24,10 +24,12 @@ const scrollToSection = (id: string) => {
     }
 };
 
-const whatsappLink = (prevString?: string) => {
-    if (!prevString) {
-        return `https://api.whatsapp.com/send/?phone=5516991790291&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+Google%21+Pode+me+ajudar%3F+%5BFavor+n%C3%A3o+apagar+essa+mensagem+para+identifica%C3%A7%C3%A3o%5D&type=phone_number&app_absent=0`
+const whatsappLink = (path?:string) => {
+
+    if (path === '/meta') {
+        return 'https://w.app/id87ex'
     }
+
     return `https://api.whatsapp.com/send/?phone=5516991790291&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+Google%21+Pode+me+ajudar%3F+%5BFavor+n%C3%A3o+apagar+essa+mensagem+para+identifica%C3%A7%C3%A3o%5D&type=phone_number&app_absent=0`
 }
 

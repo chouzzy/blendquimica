@@ -6,14 +6,18 @@ import { ModalMenu } from "./Modal";
 import { RiWhatsappFill, RiMenuLine } from "react-icons/ri";
 import { SiLinkedin } from "react-icons/si";
 import { NavItem } from "./NavItem";
-import { slugify } from "../../../utils";
+import { slugify, whatsappLink } from "../../../utils";
 import { InstagramLogo, LinkedinLogo, WhatsappLogo } from "phosphor-react";
+import { useRouter } from "next/router";
 
 interface NavbarProps {
    ids: string[]
 }
 
 export function Navbar({ ids }: NavbarProps) {
+
+   const whatsapp = whatsappLink(useRouter().pathname)
+
    const isMobile = useBreakpointValue({
       base: true,
       sm: true,
@@ -69,7 +73,7 @@ export function Navbar({ ids }: NavbarProps) {
                   <HStack justifyContent='center' alignItems='baseline' spacing={2} fontSize='1.8rem' color='datBlue'>
                      <Link _hover={{ color: "pink.400" }} href='https://www.instagram.com/blendquimica_cosmeticos/'> <InstagramLogo weight="fill" /> </Link>
                      <Link _hover={{ color: "teal.400" }} href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <LinkedinLogo weight="fill" /> </Link>
-                     <Link _hover={{ fontSize: "3rem", transition: '200ms' }} color='#6cd474' fontSize='2.4rem' href='https://wa.me/5516991790291?text=Olá, tudo bem? Acessei o site da Blend Química e gostaria de falar com um atendente.'> <WhatsappLogo weight="fill" /> </Link>
+                     <Link _hover={{ fontSize: "3rem", transition: '200ms' }} color='#6cd474' fontSize='2.4rem' href={whatsapp}> <WhatsappLogo weight="fill" /> </Link>
                      {/* <Image w='70px' src='images/zap.png' alt='Dan Abramov' /> */}
                   </HStack >
                </GridItem>

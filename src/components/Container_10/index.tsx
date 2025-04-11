@@ -10,8 +10,9 @@ import {
     HStack
 } from '@chakra-ui/react';
 import { PhoneIcon } from '@chakra-ui/icons'; // Exemplo de ícone - substitua pelo ícone "fin"
-import { scrollToSection, slugify } from '../../utils';
+import { scrollToSection, slugify, whatsappLink } from '../../utils';
 import { Envelope, InstagramLogo, LinkedinLogo, Phone, PhoneCall, WhatsappLogo } from 'phosphor-react';
+import { useRouter } from 'next/router';
 
 interface FooterProps {
     ids: string[]
@@ -110,7 +111,7 @@ export function Container_10({ ids }: FooterProps) {
                 <HStack justifyContent='center' alignItems='baseline' spacing={2} fontSize='1.3rem' color='white'>
                     <Link href='https://www.instagram.com/blendquimica_cosmeticos/'> <InstagramLogo size={42} weight="fill" /> </Link>
                     <Link href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <LinkedinLogo size={42} weight="fill" /> </Link>
-                    <Link href='https://wa.me/5516991790291?text=Olá, tudo bem? Acessei o site da Blend Química e gostaria de falar com um atendente.'> <WhatsappLogo size={42} weight="fill" /> </Link>
+                    <Link href={whatsappLink(useRouter().pathname)}> <WhatsappLogo size={42} weight="fill" /> </Link>
                     {/* <Image w='70px' src='images/zap.png' alt='Dan Abramov' /> */}
                 </HStack >
             </VStack>
