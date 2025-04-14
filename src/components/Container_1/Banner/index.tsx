@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Heading, Image, Link, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Text, useBreakpointValue, useDisclosure, VStack } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { GiClick } from "react-icons/gi";
 import { whatsappLink } from "../../../utils";
 

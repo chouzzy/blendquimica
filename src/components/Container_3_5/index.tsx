@@ -1,4 +1,5 @@
 import { Button, Container, Flex, Link, useBreakpointValue } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { slugify, whatsappLink } from "../../utils";
 import { Partners } from "./Partners";
 import { Products } from "./Products";
