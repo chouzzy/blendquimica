@@ -60,7 +60,7 @@ export function Container_9({ id }: Container_9Props) {
         >
             <Flex id={slugify(id)} flexDir={'column'} maxW={1920}>
                 <Flex w='100%' p={8} alignItems='center' justifyContent={'center'}>
-                    <Link href={whatsappLink()} target='_blank' isExternal>
+                    <Link href={whatsappLink(useRouter().pathname)} target='_blank' isExternal>
                         <Button id={'zap-tag'} color='white' bgColor='green.500' _hover={{ bgColor: 'datBlue' }} borderRadius={16} px={8}>
                             ENTRAR EM CONTATO
                         </Button>

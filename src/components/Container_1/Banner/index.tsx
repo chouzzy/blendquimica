@@ -57,7 +57,7 @@ export function Banner() {
                      <Text >
                         A Blend Química te fornece total suporte na criação do seu cosmético, colocando todas as suas ideias em prática. Você tem um sonho? Nós temos a fórmula.
                      </Text>
-                     <Link href={whatsappLink()} target='_blank' isExternal>
+                     <Link href={whatsappLink(useRouter().pathname)} target='_blank' isExternal>
                         <Button id={'zap-tag'} color='white' bgColor='green.500' _hover={{ bgColor: 'datBlue' }} borderRadius={2} px={8}>
                            ENTRAR EM CONTATO
                         </Button>
@@ -66,7 +66,7 @@ export function Banner() {
                   {isMobileVersion ?
                      '' :
                      <Flex justifyContent={'center'} alignItems='center'>
-                        <Image src={'static/v2/banner-prod-1.png'} objectFit='contain' objectPosition={'center'} maxW={400} />
+                        <Image src={'static/v2/banner-prod-1.spng'} objectFit='contain' objectPosition={'center'} maxW={400} />
                      </Flex>
                   }
                </Flex>
