@@ -37,7 +37,7 @@ export function ModalMenu(ModalMenuProps) {
                         <SocialMedia color='#E1306C' icon={<InstagramLogo/>} mediaLink={socialMediaLinks.instagram}/>
                         <SocialMedia color='#4267B2' icon={<FacebookLogo/>} mediaLink={socialMediaLinks.facebook}/>
                         <SocialMedia color='#4267B2' icon={<LinkedinLogo/>} mediaLink={socialMediaLinks.linkedin}/>
-                        <SocialMedia color='#25D366' icon={<WhatsappLogo weight="fill"/>} mediaLink={socialMediaLinks.whatsapp}/>
+                        <SocialMedia color='#25D366' icon={<WhatsappLogo id='#zap-tag' weight="fill"/>} mediaLink={socialMediaLinks.whatsapp}/>
                   </HStack>
                </VStack>
             </Box>
