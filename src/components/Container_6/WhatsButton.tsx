@@ -6,7 +6,7 @@ import { whatsappLink } from "../../utils";
 
 export default function WhatsButton() {
     return (
-        <Link  id='#zap-tag' href={whatsappLink(useRouter().pathname)} target="_blank">
+        <Link  id='zap-tag' href={whatsappLink(useRouter().pathname)} target="_blank">
 
             <Flex
                 bg='#25D366'
