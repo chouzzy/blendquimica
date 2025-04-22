@@ -33,7 +33,6 @@ export function Banner() {
                <Heading fontSize='3.4rem' color='#3b6cd5' textShadow='1px 1px 1px #000000b0' mx='auto' >BLEND QUÍMICA</Heading>
                <Text maxW={['95%','60%','60%','60%','60%']} my={4} fontSize='1.6rem' mx='auto' textAlign='center' textShadow='1px 1px 1px #000000b0'>
                Desenvolvemos e produzimos <b> cosméticos personalizados </b>, do seu jeito, com a <b>sua</b> marca.
-
                </Text>
             </Box>
 
@@ -67,7 +66,7 @@ export function Banner() {
                   {isMobileVersion ?
                      '' :
                      <Flex justifyContent={'center'} alignItems='center'>
-                        <Image src={'static/v2/banner-prod-1.spng'} objectFit='contain' objectPosition={'center'} maxW={400} />
+                        <Image src={'static/v2/banner-prod-1.png'} objectFit='contain' objectPosition={'center'} maxW={400} />
                      </Flex>
                   }
                </Flex>
