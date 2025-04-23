@@ -9,7 +9,8 @@ export default function WhatsButton() {
         <Link href={whatsappLink(useRouter().pathname)} target="_blank">
 
             <Flex
-                id={'zap-tag'}
+                id={'zap-button'}
+                className={'zap-button'}
                 bg='#25D366'
                 color="#fffafa"
                 fontSize='1.8rem'
