@@ -24,7 +24,7 @@ export default function WhatsButton() {
                     transition: ' 400ms', fontSize: '2.4rem'
                 }}
                 cursor='pointer'>
-                <WhatsappLogo weight="fill" />
+                <WhatsappLogo id={'zap-tag'} weight="fill" />
             </Flex>
         </Link>
     )

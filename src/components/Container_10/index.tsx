@@ -113,7 +113,7 @@ export function Container_10({ ids }: FooterProps) {
                         <Link href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <LinkedinLogo size={42} weight="fill" /> </Link>
                         <Link href={whatsappLink(useRouter().pathname)} target='_blank' isExternal>
                             <Flex id={'zap-tag'}>
-                                <WhatsappLogo  size={42} weight="fill" />
+                                <WhatsappLogo id={'zap-tag'} size={42} weight="fill" />
                             </Flex>
                         </Link>
                         {/* <Image w='70px' src='images/zap.png' alt='Dan Abramov' /> */}
