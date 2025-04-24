@@ -111,7 +111,7 @@ export function Container_10({ ids }: FooterProps) {
                     <HStack justifyContent='center' alignItems='baseline' spacing={2} fontSize='1.3rem' color='white'>
                         <Link href='https://www.instagram.com/blendquimica_cosmeticos/'> <InstagramLogo size={42} weight="fill" /> </Link>
                         <Link href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <LinkedinLogo size={42} weight="fill" /> </Link>
-                        <Link href={whatsappLink(useRouter().pathname)}>
+                        <Link href={whatsappLink(useRouter().pathname)} target='_blank' isExternal>
                             <Flex id={'zap-tag'}>
                                 <WhatsappLogo  size={42} weight="fill" />
                             </Flex>

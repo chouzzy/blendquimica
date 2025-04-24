@@ -73,7 +73,7 @@ export function Navbar({ ids }: NavbarProps) {
                   <HStack justifyContent='center' alignItems='baseline' spacing={2} fontSize='1.8rem' color='datBlue'>
                      <Link _hover={{ color: "pink.400" }} href='https://www.instagram.com/blendquimica_cosmeticos/'> <InstagramLogo weight="fill" /> </Link>
                      <Link _hover={{ color: "teal.400" }} href='https://www.linkedin.com/company/blend-qu%C3%ADmica/'> <LinkedinLogo weight="fill" /> </Link>
-                     <Link _hover={{ fontSize: "3rem", transition: '200ms' }} color='#6cd474' fontSize='2.4rem' href={whatsapp}>
+                     <Link _hover={{ fontSize: "3rem", transition: '200ms' }} color='#6cd474' fontSize='2.4rem' href={whatsapp} target='_blank' isExternal>
                         <Flex id={'zap-tag'}>
                            <WhatsappLogo  weight="fill" />
                         </Flex>
